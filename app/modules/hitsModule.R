@@ -80,9 +80,10 @@ hitsModule <- function(input, output, session, moduleData,helpReactive,
       tt = round(100*prop.table(tt),3)
     }
 
-    dd           <- data.frame(rownames(tt),as.data.frame.matrix(tt),check.names = FALSE)
-    names(dd)[1] <- input$TypeHit
-
+    dd            <- data.frame(rownames(tt),as.data.frame.matrix(tt),check.names = FALSE)
+    names(dd)[1]  <- input$TypeHit
+    row.names(dd) <- NULL
+    
     return(dd)
 
   })
@@ -94,12 +95,9 @@ hitsModule <- function(input, output, session, moduleData,helpReactive,
     
     if(is.null(lstData$DD.LogIndicator)) return()
 
-    Choices <- list( Structure = c(line="branche",product="product",process="proces",label="label"),
-                     Result1   = c('end argument'="eindargumentatie",'end result'="eindresultaat"),
-                     Result2   = c(value="waarde",
-                                   weight="gewicht"),
-                     Time      = c("Year","Quarter","Month","MonthName","Week","WeekDay","DayMonth"),
-                     Other     = c(mode="mode",resulttype="resulttype",succes="succes",explanation="toelichting",importance="belang"))
+    Choices <- list( Structure = c(line="branche"),
+                     Result1   = c('end argument'="eindargumentatie"),
+                     Time      = c("Year","Quarter","MonthName","WeekDay"))
 
     selectInput(ns("siHitColumn"), "group", choices = Choices, selected = "eindargumentatie", multiple = FALSE, selectize = TRUE, width = NULL)
   })

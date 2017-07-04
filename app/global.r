@@ -19,7 +19,7 @@ library(FrissNotie)
 # module definitions
 source("modules/filterModule.R")
 source("modules/piesModule.R")
-source("modules/frontPanelModuleReactives.R")
+source("modules/frontPanelModule.R")
 source("modules/flowChartModule.R")
 source("modules/hitsModule.R")
 
