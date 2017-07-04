@@ -1,0 +1,124 @@
+#BusyDIV{
+  z-index: 100000000000001;
+  position: absolute; 
+  width:100%;
+  height:100%;
+  pointer-events:none;
+}
+
+
+#BusyDIV.busy{
+  pointer-events:auto;
+  background-color: white;
+  opacity: 0.5;
+}
+
+#FrissLogo{
+  position:fixed; 
+  top: 10px; 
+  left:10px;
+  z-index: 100000000000;
+  height: 30px;
+}
+
+.FrissHeaderButton{
+height:35px; 
+position: fixed; 
+z-index: 100000000001;
+top:8px; 
+}
+
+
+/*pad the body 60px down due to fixed header top nav bar */
+body{
+    padding-top: 60px;
+    /* background-color: #444; */
+    font-family: "Helvetica Neue",Arial,sans-serif;
+}
+
+#ScenarioSelectorPanel .btn-default {
+    color: #FFF;
+    background-color: #000;
+    border-color: #000;
+}
+
+#ScenarioSelectorPanel .btn-default:hover {
+    color: orange;
+}
+
+#ScenarioSelectorPanel .btn-default:focus {
+    color: green;
+}
+
+#ScenarioSelectorPanel .btn {
+    width: 120px;
+}
+
+.navbar {
+    min-height: 0px;
+    height: 50px;
+    margin-bottom: 0px;
+}
+
+.navbar-default {
+    background-color: #333;
+    border-color: #FFF;
+  	color: #FFF;
+  	opacity: 0.95;
+}
+
+.navbar-nav>li>a {
+    padding-bottom: 0px; 
+}  
+  
+.dashPanel {
+  	border-radius: 20px; 
+  	padding:25px; 
+  	background-color: white; 
+  	color: black;
+}
+
+.dashPanel h1 {
+	  color: black;
+}	
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: green;
+}
+
+/* menu items */
+/* set the background of the menu items to pink and default color */
+
+.navbar .nav > li > a {
+    background-color: rgb(51, 51, 51);   
+    color: white;
+    text-shadow: none;
+}
+
+/* set hover and focus */
+    .navbar .nav > li > a:focus,
+    .navbar .nav > li > a:hover {
+    background-color: rgb(51, 51, 51);
+    color: orange;
+}
+/* set active item */
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+
+    background-color: rgb(51, 51, 51);
+    color: green;
+}
+
+/* set font color and background of the project name (brand) */
+.navbar .brand 
+{
+    background-color: rgb(51, 51, 51);
+  	color: rgb(51, 51, 51);
+}
+
+.navbar .nav li.dropdown.open > .dropdown-toggle, .navbar .nav li.dropdown.active > .dropdown-toggle, .navbar .nav li.dropdown.open.active > .dropdown-toggle {
+    color: green;
+    background-color:rgb(51, 51, 51);
+}
+

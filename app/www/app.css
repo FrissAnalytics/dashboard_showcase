@@ -1,0 +1,26 @@
+#btnHelp{
+  background-color:green;
+  color:white;
+  padding: 0px 6px;
+  position:fixed;
+  right:20px;
+  top:12px;
+  z-index:100000000000;
+  border: 0px;
+}
+
+#btnHelp:hover{
+  background-color:white;
+  color:green;
+}
+
+#busy{
+  width:100px;
+  height:20px;
+  position: fixed;
+  z-index: 100000000000;
+  background-color: white;
+  top: 8px;
+  right: 10px; 
+  visibility: hidden;
+}

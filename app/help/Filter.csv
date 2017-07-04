@@ -1,0 +1,5 @@
+"","intro","element","position"
+"1","<h1 style = ""font-size:200%"">Global filter.</h1> With the controls on this page you can filter the data used in the rest of the app. Each button group and control represents a variable that can be used to filter the data.",NA,"auto"
+"2","With this buttongroup the process can be filtered. Buttons highlighted in green indicate that a group is contained in the current filter. The buttons become gray when the users clicks on them indicating that the group will not be in the filter. Buttons will be colored orange when the group is not in the current filter because of the selection made by the user. If for example product A only occurs for label X its button will be orange once label X is filtered out by the user.","#Filter-proces","auto"
+"3","With this button the filter will be reset to its initial state where all data passes though the filter.","#Filter-reset","bottom-left-aligned"
+"5","This button will apply the current filter for the whole app.","#Filter-apply","bottom-left-aligned"

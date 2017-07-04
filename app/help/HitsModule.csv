@@ -1,0 +1,6 @@
+"","intro","element","position"
+"1","<h1 style = ""font-size:200%"">Hits overview</h1> This pages gives insight in how indicator and argument hits are distributed over a selected grouping",NA,"auto"
+"2","With this dropdown you can select wheter you want to see indicator hits or argument hits.","#typeSelector",NA
+"3","With this dropdown you can select how you want to see the indicator or argument hits grouped.","#HitsModule-HitColumn",NA
+"4","With this dropdown it is possible to switch between displaying percentages or absolute counts","#dispMode",NA
+"5","This table shows for each indicator or argument how they are divided between the groups.","#HitsModule-HitTable",NA
